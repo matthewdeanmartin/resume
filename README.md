@@ -20,11 +20,21 @@ I'm somewhat sceptical of the possibility of persuasion. I think undecided peopl
 I think a lot of people have "respect for autonomy issues" ie, they don't have a functional way to deal with people trying to persuade them, or even how to deal with people who are different as if difference alone is an act of persuasion.
 
 # Metastands
-Political Specturum - By this typology I'm a "Solid Liberal": https://www.pewresearch.org/politics/quiz/political-typology/ I don't think peopel are persuadable unless they've never thought about it (teenagers) or people who happen to be somewhere where they don't have to have the same opinions of their village.
+These are big topic-clusters that roughly define modern "tribes" or in some cases line up with personality types.
 
-Religion - I'm not a Christian, I'm a secular Buddhist. I think only people who are actively looking for a new religion are persuadable to become Buddhist, everyone else is just comparing notes or trying to be mean to folk outside of their religion or religious stance.
+## Political Specturum
+By this typology I'm a "Solid Liberal": https://www.pewresearch.org/politics/quiz/political-typology/ I don't think peopel are persuadable unless they've never thought about it (teenagers) or people who happen to be somewhere where they don't have to have the same opinions of their village.
 
-Food - I'm vegan and I think only people who have never thought about their source of food & people who are concerned about their health. I think at best 1/3 of people might be persuadable to eat meat less, e.g. as little as twice a week, in part because that is how people ate 100 years ago.
+## Religion
+I'm not a Christian, nor am I antheist, who I think mostly define themselves as not believing in a Christian god. I'm a secular Buddhist. Buddhism being so diverse, that doesn't say much, see my blog elsewhere for where I stand on doctrine and practice.
+
+I think only people who are actively looking for a new religion are persuadable to become Buddhist, everyone else is just comparing notes or trying to be mean to folk outside of their religion or religious stance.
+
+## Food
+I'm vegan and I think only people who have never thought about their source of food & people who are concerned about their health. I think at best 1/3 of people might be persuadable to eat meat less, e.g. as little as twice a week, in part because that is how people ate 100 years ago.
+
+## Language
+I think everyone should be multilingual or know a few lingua francas or even Esperanto. There is nothing special about any particular language.
 
 # Specific Issues
 ## Coronavirus
