@@ -36,6 +36,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/resume/browser/",
+
               "budgets": [
                 {
                   "type": "initial",
