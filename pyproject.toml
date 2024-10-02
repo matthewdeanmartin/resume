@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "resume"
+version = "0.1.0"
+description = ""
+authors = ["Matthew Martin <matthewdeanmartin@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<4.0,>=3.11"
+
+python-docx = "*"
+
+[tool.poetry.group.dev.dependencies]
+# types
+mypy = ">=1.8.0"
+
+# linting
+pylint = ">=3.0.2"
+ruff = "*"
+
+# testing
+pytest = ">=7.4.3"
+pytest-cov = ">=4.1.0"
+pytest-snapshot = "*"
+pytest-asyncio = "*"
+pytest-network= "*"
+time-machine = "*"
+pytest-mock =">=3.14.0"
+hypothesis = ">=6.99.13"
+tox = "*"
+pytest-django = "*"
+
+# build tools
+black = ">=23.11.0"
+
+pre-commit = ">=3.8.0"
+
+# docs
+interrogate = ">=1.5.0"
+pydoctest = ">=0.1.22"
+pdoc3 = ">=0.10.0"
+mdformat = ">=0.7.17"
+linkcheckmd = ">=1.4.0"
+codespell = ">=2.2.6"
+pyenchant = ">=3.2.2"
+metametameta = ">=0.1.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+#testpaths = [
+#    "test",
+#    "tests",
+#    "test_*.py"
+#]
+junit_family = "xunit1"
+norecursedirs = ["vendor", "scripts"]
+
+DJANGO_SETTINGS_MODULE = "json_editor_host.settings"
