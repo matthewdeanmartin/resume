@@ -7,7 +7,6 @@
   <p class="mb-6"><a href="#how-made">{{ personalInfo.howMade }}</a></p>
 
 
-
   <h2 class="text-2xl font-semibold mb-4">Professional Experience</h2>
   <button (click)="openHireDialog()" class="bg-green-500 text-white px-4 py-2 rounded mb-6">Hire!</button>
 
@@ -32,7 +31,6 @@
   </div>
 
 
-
   <h2 class="text-2xl font-semibold mb-4">Skills</h2>
   <ul class="list-disc list-inside">
     <li *ngFor="let skill of skills">{{ skill }}</li>
@@ -46,22 +44,21 @@
   <a id="how-made"><h2 class="text-2xl font-semibold my-4">How This Was Made</h2></a>
   <div class="mb-2">
     <p>I had the funny idea of, "What if someone could both hire and fire you from your resume, just by clicking a
-    few buttons?".</p>
+      few buttons?".</p>
     <p>
       I prompted Claude.AI, which can't compile TypeScript, so I copied it over to a fresh Angular project made with
-      `ng init`. I remove the boiler plate. Initially nothing worked because Claude create an app expecting AppModule and
-      now the Angular team is pushing the "standalone" model. I switched the config and import to standalone.
+      `ng init` and I removed the boilerplate. Initially nothing worked because Clauded create an app expecting
+      AppModule and
+      now the Angular team is pushing the "standalone" model. I switched the config and imports to standalone.
     </p>
     <p>The bots are not able to create entire applications, at best, they can create a section of an application and a
-    human must tie the pieces together.</p>
+      human must tie the pieces together.</p>
     <p>The CSS is from <a href="https://github.com/vincentdoerig/latex-css">latex-css</a>, which by default is very
-    narrow, so I overrode the width.</p>
+      narrow, so I overrode the width.</p>
     <p>If this was a professional product, I'd add a build script, unittests and package it in a Dockerfile along with
-    nginx. Instead this will be published on Github so that there is a convenient link to it.</p>
+      nginx. Instead this will be published on Github so that there is a convenient link to it.</p>
   </div>
 </div>
-
-
 
 
 <!--<router-outlet />-->
