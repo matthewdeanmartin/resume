@@ -1,0 +1,64 @@
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-4">{{ personalInfo.name }}</h1>
+  <p class="mb-2">{{ personalInfo.location }} | {{ personalInfo.phone }} | {{ personalInfo.email }}</p>
+  <p class="mb-4"><a href="{{ personalInfo.github }}">{{ personalInfo.github }}</a></p>
+  <p class="mb-6">{{ personalInfo.summary }}</p>
+
+  <p class="mb-6"><a href="#how-made">{{ personalInfo.howMade }}</a></p>
+
+
+  <h2 class="text-2xl font-semibold mb-4">Professional Experience</h2>
+  <button (click)="openHireDialog()" class="bg-green-500 text-white px-4 py-2 rounded mb-6">Hire!</button>
+
+  <div *ngIf="showHireDialog" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
+    <div class="bg-white p-6 rounded-lg">
+      <h2 class="text-xl font-bold mb-4">Add New Job</h2>
+      <input [(ngModel)]="newJob.title" placeholder="Job Title" class="border p-2 mb-2 w-full">
+      <input [(ngModel)]="newJob.company" placeholder="Company" class="border p-2 mb-2 w-full">
+      <button (click)="hire()" class="bg-green-500 text-white px-4 py-2 rounded mr-2">Hire</button>
+      <button (click)="closeHireDialog()" class="bg-gray-500 text-white px-4 py-2 rounded">Cancel</button>
+    </div>
+  </div>
+
+  <div *ngFor="let job of experience; let i = index" class="mb-6">
+    <div class="flex justify-between items-center">
+      <h3 class="text-xl font-semibold">{{ job.title }}, {{ job.company }}, {{ job.period }}</h3>
+      <button (click)="fireFromPosition(i)" class="bg-red-500 text-white px-4 py-2 rounded">Fire!</button>
+    </div>
+    <ul class="list-disc list-inside">
+      <li *ngFor="let responsibility of job.responsibilities">{{ responsibility }}</li>
+    </ul>
+  </div>
+
+
+  <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+  <ul class="list-disc list-inside">
+    <li *ngFor="let skill of skills">{{ skill }}</li>
+  </ul>
+
+  <h2 class="text-2xl font-semibold my-4">Education</h2>
+  <div *ngFor="let edu of education" class="mb-2">
+    <p><strong>{{ edu.degree }}</strong>, {{ edu.institution }}, {{ edu.period }}</p>
+  </div>
+
+  <a id="how-made"><h2 class="text-2xl font-semibold my-4">How This Was Made</h2></a>
+  <div class="mb-2">
+    <p>I had the funny idea of, "What if someone could both hire and fire you from your resume, just by clicking a
+      few buttons?".</p>
+    <p>
+      I prompted Claude.AI, which can't compile TypeScript, so I copied it over to a fresh Angular project made with
+      `ng init` and I removed the boilerplate. Initially nothing worked because Clauded create an app expecting
+      AppModule and
+      now the Angular team is pushing the "standalone" model. I switched the config and imports to standalone.
+    </p>
+    <p>The bots are not able to create entire applications, at best, they can create a section of an application and a
+      human must tie the pieces together.</p>
+    <p>The CSS is from <a href="https://github.com/vincentdoerig/latex-css">latex-css</a>, which by default is very
+      narrow, so I overrode the width.</p>
+    <p>If this was a professional product, I'd add a build script, unittests and package it in a Dockerfile along with
+      nginx. Instead this will be published on Github so that there is a convenient link to it.</p>
+  </div>
+</div>
+
+
+<!--<router-outlet />-->
