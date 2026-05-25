@@ -28,3 +28,6 @@ junit_family = "xunit1"
 norecursedirs = ["vendor", "scripts"]
 
 DJANGO_SETTINGS_MODULE = "json_editor_host.settings"
+
+[tool.uv]
+universal = true
