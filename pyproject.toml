@@ -33,3 +33,6 @@ DJANGO_SETTINGS_MODULE = "json_editor_host.settings"
 
 [tool.uv.pip]
 universal = true
+
+[tool.ruff.lint]
+ignore = ["RUF100"]  # unused noqa differs across Python versions
